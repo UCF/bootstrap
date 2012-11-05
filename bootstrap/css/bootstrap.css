@@ -172,7 +172,7 @@ a {
 }
 
 a:hover {
-  color: #c30202;
+  color: #ed1c24;
   text-decoration: underline;
 }
 
@@ -654,6 +654,7 @@ h6 small {
 h1 {
   font-family: Georgia, serif;
   font-size: 37px;
+  font-weight: normal;
   line-height: 40px;
 }
 
@@ -3426,7 +3427,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-link:hover {
-  color: #c30202;
+  color: #ed1c24;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3970,8 +3971,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav .dropdown-toggle:hover .caret {
-  border-top-color: #c30202;
-  border-bottom-color: #c30202;
+  border-top-color: #ed1c24;
+  border-bottom-color: #ed1c24;
 }
 
 /* move down carets for tabs */
