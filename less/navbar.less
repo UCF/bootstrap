@@ -10,7 +10,7 @@
 .navbar {
   overflow: visible;
   margin-bottom: @baseLineHeight;
-  color: @navbarText;
+  color: @navbarText !important;
 
   // Fix for IE7's bad z-indexing so dropdowns don't appear below content that follows the navbar
   *position: relative;
@@ -72,9 +72,9 @@
 // Janky solution for now to account for links outside the .nav
 // -------------------------
 .navbar-link {
-  color: @navbarLinkColor;
+  color: @navbarLinkColor !important;
   &:hover {
-    color: @navbarLinkColorHover;
+    color: @navbarLinkColorHover !important;
   }
 }
 
