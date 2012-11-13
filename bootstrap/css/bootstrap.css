@@ -5891,3 +5891,8 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+}
