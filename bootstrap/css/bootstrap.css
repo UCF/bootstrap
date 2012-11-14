@@ -2724,6 +2724,7 @@ table th[class*="span"],
   min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   list-style: none;
   background-color: #ffffff;
   border: 1px solid #ccc;
@@ -4188,7 +4189,7 @@ input[type="submit"].btn.btn-mini {
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
-  color: #777777;
+  color: #777777 !important;
   text-shadow: 0 1px 0 #ffffff;
 }
 
@@ -4378,7 +4379,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: #777777;
+  color: #777777 !important;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
@@ -4389,7 +4390,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  color: #333333;
+  color: #333333 !important;
   text-decoration: none;
   background-color: transparent;
 }
