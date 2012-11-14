@@ -382,7 +382,7 @@
 // -------------------------
 
 .navbar-inverse {
-  color: @navbarInverseText;
+  color: @navbarInverseText !important;
 
   .navbar-inner {
     #gradient > .vertical(@navbarInverseBackgroundHighlight, @navbarInverseBackground);
@@ -391,10 +391,10 @@
 
   .brand,
   .nav > li > a {
-    color: @navbarInverseLinkColor;
+    color: @navbarInverseLinkColor !important;
     text-shadow: 0 -1px 0 rgba(0,0,0,.25);
     &:hover {
-      color: @navbarInverseLinkColorHover;
+      color: @navbarInverseLinkColorHover !important;
     }
   }
 
@@ -413,7 +413,7 @@
 
   // Inline text links
   .navbar-link {
-    color: @navbarInverseLinkColor;
+    color: @navbarInverseLinkColor !important;
     &:hover {
       color: @navbarInverseLinkColorHover;
     }
