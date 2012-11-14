@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v2.2.0
+ * Bootstrap v2.2.1
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -4136,7 +4136,7 @@ input[type="submit"].btn.btn-mini {
   *z-index: 2;
   margin-bottom: 20px;
   overflow: visible;
-  color: #777777 !important;
+  color: #777777;
 }
 
 .navbar-inner {
@@ -4202,11 +4202,11 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-link {
-  color: #777777 !important;
+  color: #777777;
 }
 
 .navbar-link:hover {
-  color: #333333 !important;
+  color: #333333;
 }
 
 .navbar .divider-vertical {
