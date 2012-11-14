@@ -115,10 +115,10 @@
   padding-top: 8px;
   padding-bottom: 8px;
   line-height: @baseLineHeight;
-  border: 1px solid transparent;
+  border: 1px solid transparent !important;
   .border-radius(4px 4px 0 0);
   &:hover {
-    border-color: @grayLighter @grayLighter #ddd;
+    border-color: @grayLighter @grayLighter #ddd !important;
   }
 }
 // Active state, and it's :hover to override normal :hover
@@ -126,8 +126,8 @@
 .nav-tabs > .active > a:hover {
   color: @gray !important;
   background-color: @bodyBackground;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
+  border: 1px solid #ddd !important;
+  border-bottom-color: transparent !important;
   cursor: default;
 }
 
@@ -243,7 +243,7 @@
 .nav-pills .open .dropdown-toggle,
 .nav > li.dropdown.open.active > a:hover {
   color: @white;
-  background-color: @grayLight;
+  background-color: @grayLighter;
   border-color: @grayLight;
 }
 .nav li.dropdown.open .caret,
