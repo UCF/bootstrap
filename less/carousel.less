@@ -77,10 +77,10 @@
   font-size: 60px;
   font-weight: 100;
   line-height: 30px;
-  color: @white;
+  color: @white !important;
   text-align: center;
   background: @grayDarker;
-  border: 3px solid @white;
+  border: 3px solid @white !important;
   .border-radius(23px);
   .opacity(50);
 
@@ -99,8 +99,9 @@
 
   // Hover state
   &:hover {
-    color: @white;
+    color: @white !important;
     text-decoration: none;
+	border: 3px solid @white !important;
     .opacity(90);
   }
 }
@@ -120,7 +121,7 @@
 }
 .carousel-caption h4,
 .carousel-caption p {
-  color: @white;
+  color: @white !important;
   line-height: @baseLineHeight;
 }
 .carousel-caption h4 {
