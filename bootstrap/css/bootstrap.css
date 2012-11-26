@@ -2802,30 +2802,30 @@ table th[class*="span"],
 .dropdown-submenu:hover > a {
   color: #ffffff !important;
   text-decoration: none;
-  background-color: #0068c2;
-  background-image: -moz-linear-gradient(top, #006dcc, #005fb3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#006dcc), to(#005fb3));
-  background-image: -webkit-linear-gradient(top, #006dcc, #005fb3);
-  background-image: -o-linear-gradient(top, #006dcc, #005fb3);
-  background-image: linear-gradient(to bottom, #006dcc, #005fb3);
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
   background-repeat: repeat-x;
   border-bottom: 0 none !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff006dcc', endColorstr='#ff005fb3', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
 }
 
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: #ffffff !important;
   text-decoration: none;
-  background-color: #0068c2;
-  background-image: -moz-linear-gradient(top, #006dcc, #005fb3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#006dcc), to(#005fb3));
-  background-image: -webkit-linear-gradient(top, #006dcc, #005fb3);
-  background-image: -o-linear-gradient(top, #006dcc, #005fb3);
-  background-image: linear-gradient(to bottom, #006dcc, #005fb3);
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
   background-repeat: repeat-x;
   outline: 0;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff006dcc', endColorstr='#ff005fb3', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
 }
 
 .dropdown-menu .disabled > a,
@@ -3909,6 +3909,7 @@ input[type="submit"].btn.btn-mini {
   padding-bottom: 8px;
   margin-top: 2px;
   margin-bottom: 2px;
+  border-bottom: 0 !important;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -3916,8 +3917,9 @@ input[type="submit"].btn.btn-mini {
 
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
-  color: #ffffff;
-  background-color: #660000;
+  color: #ffffff !important;
+  background-color: #0088cc;
+  border-bottom: 0 !important;
 }
 
 .nav-stacked > li {
