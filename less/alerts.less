@@ -13,6 +13,10 @@
   background-color: @warningBackground;
   border: 1px solid @warningBorder;
   .border-radius(@baseBorderRadius);
+}
+.alert,
+.alert h4 {
+  // Specified for the h4 to prevent conflicts of changing @headingsColor
   color: @warningText;
 }
 .alert h4 {
@@ -38,7 +42,7 @@
   color: @successText;
 }
 .alert-success h4 {
-	color: @successText;
+  color: @successText;
 }
 .alert-danger,
 .alert-error {
@@ -48,7 +52,7 @@
 }
 .alert-danger h4,
 .alert-error h4 {
-	color: @errorText;
+  color: @errorText;
 }
 .alert-info {
   background-color: @infoBackground;
@@ -56,7 +60,7 @@
   color: @infoText;
 }
 .alert-info h4 {
-	color: @infoText;
+  color: @infoText;
 }
 
 
