@@ -138,7 +138,8 @@ dt {
   font-weight: bold;
 }
 dd {
-  margin-left: @baseLineHeight / 2;
+  margin-left: 0;
+  margin-bottom: 20px;
 }
 // Horizontal layout (like forms)
 .dl-horizontal {
@@ -180,20 +181,27 @@ abbr.initialism {
 
 // Blockquotes
 blockquote {
-  padding: 0 0 0 15px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: bold;
+  //padding: 0 0 0 15px;
   margin: 0 0 @baseLineHeight;
-  border-left: 5px solid @grayLighter;
+  //border-left: 5px solid @grayLighter;
   p {
     margin-bottom: 0;
     #font > .shorthand(16px,300,@baseLineHeight * 1.25);
   }
   small {
+  	font-size: @fontSizeSmall;
+	font-weight: normal;
+	font-style: italic;
     display: block;
-    line-height: @baseLineHeight;
-    color: @grayLight;
-    &:before {
-      content: '\2014 \00A0';
-    }
+	margin-top: 20px;
+    line-height: 20px;
+    color: @grayDark;
+    //&:before {
+    //  content: '\2014 \00A0';
+    //}
   }
 
   // Float right with text-align: right
