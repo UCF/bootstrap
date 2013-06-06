@@ -82,14 +82,10 @@ bootstrap:
 #
 
 clean-install:
-	rm ../-/img/glyphicons-halflings*.png
-	rm ../min/img/glyphicons-halflings*.png
-	rm ../-/css/bootstrapbootstrap.css
-	rm ../min/css/bootstrap.css
-	rm ../-/css/bootstrap-responsive.css
-	rm ../min/css/bootstrap-responsive.css
-	rm ../-/js/bootstrap.js
-	rm ../min/js/bootstrap.js
+	rm ../img/glyphicons-halflings*.png
+	rm ../css/bootstrap.css
+	rm ../css/bootstrap-responsive.css
+	rm ../js/bootstrap.js
 
 #
 # BUILD SIMPLE BOOTSTRAP DIRECTORY
@@ -97,23 +93,13 @@ clean-install:
 #
 
 bootstrap-install:
-	mkdir -p ../-/img
-	mkdir -p ../-/css
-	mkdir -p ../-/js
-	mkdir -p ../min/img
-	mkdir -p ../min/css
-	mkdir -p ../min/js
-	cp img/* ../-/img
-	cp img/* ../min/img
-	recess --compile ${BOOTSTRAP_LESS} > ../-/css/bootstrapbootstrap.css
-	recess --compress ${BOOTSTRAP_LESS} > ../min/css/bootstrap.css
-	recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ../-/css/bootstrap-responsive.css
-	recess --compress ${BOOTSTRAP_RESPONSIVE_LESS} > ../min/css/bootstrap-responsive.css
-	cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ../-/js/bootstrap.js
-	uglifyjs ../-/js/bootstrap.js -nc > ../min/js/bootstrap.min.tmp.js
-	echo "/*!\n* Bootstrap.js by @fat & @mdo\n* Copyright 2012 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/" > ../-/js/copyright.js
-	cat ../-/js/copyright.js ../min/js/bootstrap.min.tmp.js > ../min/js/bootstrap.js
-	rm ../-/js/copyright.js ../min/js/bootstrap.min.tmp.js
+	mkdir -p ../img
+	mkdir -p ../css
+	mkdir -p ../js
+	cp img/* ../img
+	recess --compile ${BOOTSTRAP_LESS} > ../css/bootstrapbootstrap.css
+	recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ../css/bootstrap-responsive.css
+	cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > ../js/bootstrap.js
 
 #
 # MAKE FOR GH-PAGES 4 FAT & MDO ONLY (O_O  )
