@@ -52,6 +52,12 @@ a.text-success:focus { color: darken(@successText, 10%); }
 .text-right          { text-align: right; }
 .text-center         { text-align: center; }
 
+a:hover,
+button.btn:hover {
+  .transition(background-color);
+  .transition-duration(0.25s);
+}
+
 
 // Headings
 // -------------------------
@@ -66,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   small {
     font-weight: normal;
     line-height: 1;
-    color: @grayLight;
+    color: @gray;
   }
 }
 
