@@ -16,28 +16,37 @@
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  .border-radius(15px);
+  background-color: @btnBackground;
+  .border-radius(4px);
+  .box-shadow(0 2px 0 0 darken(@btnBackground, 25%));
+  color: @white;
 }
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: @btnBackgroundHighlight;
+  .box-shadow(0 2px 0 0 darken(@btnBackgroundHighlight, 25%));
+}
+.pager li > a:active {
+  background-color: @btnBackgroundHighlight;
+  .box-shadows(inset 0 2px 0 0 darken(@btnBackgroundHighlight, 25%), 0 2px 0 0 @btnBackgroundHighlight);
 }
 .pager .next > a,
 .pager .next > span {
   float: right;
+  .border-radius(0 4px 4px 0);
 }
 .pager .previous > a,
 .pager .previous > span {
   float: left;
+  .border-radius(4px 0 0 4px);
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: @grayLight;
-  background-color: #fff;
+  color: @white;
+  background-color: @grayLight;
   cursor: default;
+  .box-shadow(0 2px 0 0 @grayLight);
 }
