@@ -37,7 +37,7 @@
   .border-radius(0);
 }
 .btn-group > .btn + .btn {
-  margin-left: -1px;
+  //margin-left: -1px;
 }
 .btn-group > .btn,
 .btn-group > .dropdown-menu,
@@ -106,24 +106,59 @@
   *padding-top: 5px;
   *padding-bottom: 5px;
   .box-shadow(0 2px 0 0 darken(@btnBackground, 25%));
+  border-left: 1px solid @btnBackgroundHighlight;
+  &:hover,
+  &:focus {
+    .box-shadow(0 2px 0 0 darken(@btnBackgroundHighlight, 25%));
+  }
 }
 .btn-group > .btn-primary + .dropdown-toggle {
   .box-shadow(0 2px 0 0 darken(@btnPrimaryBackground, 25%));
+  border-left: 1px solid @btnPrimaryBackgroundHighlight;
+  &:hover,
+  &:focus {
+    .box-shadow(0 2px 0 0 darken(@btnPrimaryBackgroundHighlight, 35%));
+  }
 }
 .btn-group > .btn-warning + .dropdown-toggle {
   .box-shadow(0 2px 0 0 darken(@btnWarningBackground, 25%));
+  border-left: 1px solid @btnWarningBackgroundHighlight;
+  &:hover,
+  &:focus {
+    .box-shadow(0 2px 0 0 darken(@btnWarningBackgroundHighlight, 25%));
+  }
 }
 .btn-group > .btn-danger + .dropdown-toggle {
   .box-shadow(0 2px 0 0 darken(@btnDangerBackground, 25%));
+  border-left: 1px solid @btnDangerBackgroundHighlight;
+  &:hover,
+  &:focus {
+    .box-shadow(0 2px 0 0 darken(@btnDangerBackgroundHighlight, 25%));
+  }
 }
 .btn-group > .btn-success + .dropdown-toggle {
   .box-shadow(0 2px 0 0 darken(@btnSuccessBackground, 25%));
+  border-left: 1px solid @btnSuccessBackgroundHighlight;
+  &:hover,
+  &:focus {
+    .box-shadow(0 2px 0 0 darken(@btnSuccessBackgroundHighlight, 25%));
+  }
 }
 .btn-group > .btn-info + .dropdown-toggle {
+  border-left: 1px solid @btnInfoBackgroundHighlight;
   .box-shadow(0 2px 0 0 darken(@btnInfoBackground, 25%));
+  &:hover,
+  &:focus {
+    .box-shadow(0 2px 0 0 darken(@btnInfoBackgroundHighlight, 25%));
+  }
 }
 .btn-group > .btn-inverse + .dropdown-toggle {
   .box-shadow(0 2px 0 0 darken(@btnInverseBackground, 25%));
+  border-left: 1px solid @btnInverseBackgroundHighlight;
+  &:hover,
+  &:focus {
+    .box-shadow(0 2px 0 0 darken(@btnInverseBackgroundHighlight, 25%));
+  }
 }
 .btn-group > .btn-mini + .dropdown-toggle {
   padding-left: 5px;
@@ -157,27 +192,27 @@
   }
   .btn-primary.dropdown-toggle {
     background-color: @btnPrimaryBackgroundHighlight;
-    .box-shadows(inset 0 2px 0 0 darken(@btnPrimaryBackgroundHighlight, 35%), 0 2px 0 0 @btnPrimaryBackgroundHighlight);
+    .box-shadows(inset 0 2px 0 0 darken(@btnPrimaryBackgroundHighlight, 25%), 0 2px 0 0 @btnPrimaryBackgroundHighlight);
   }
   .btn-warning.dropdown-toggle {
     background-color: @btnWarningBackgroundHighlight;
-    .box-shadows(inset 0 2px 0 0 darken(@btnWarningBackgroundHighlight, 35%), 0 2px 0 0 @btnWarningBackgroundHighlight);
+    .box-shadows(inset 0 2px 0 0 darken(@btnWarningBackgroundHighlight, 25%), 0 2px 0 0 @btnWarningBackgroundHighlight);
   }
   .btn-danger.dropdown-toggle {
     background-color: @btnDangerBackgroundHighlight;
-    .box-shadows(inset 0 2px 0 0 darken(@btnDangerBackgroundHighlight, 35%), 0 2px 0 0 @btnDangerBackgroundHighlight);
+    .box-shadows(inset 0 2px 0 0 darken(@btnDangerBackgroundHighlight, 25%), 0 2px 0 0 @btnDangerBackgroundHighlight);
   }
   .btn-success.dropdown-toggle {
     background-color: @btnSuccessBackgroundHighlight;
-    .box-shadows(inset 0 2px 0 0 darken(@btnSuccessBackgroundHighlight, 35%), 0 2px 0 0 @btnSuccessBackgroundHighlight);
+    .box-shadows(inset 0 2px 0 0 darken(@btnSuccessBackgroundHighlight, 25%), 0 2px 0 0 @btnSuccessBackgroundHighlight);
   }
   .btn-info.dropdown-toggle {
     background-color: @btnInfoBackgroundHighlight;
-    .box-shadows(inset 0 2px 0 0 darken(@btnInfoBackgroundHighlight, 35%), 0 2px 0 0 @btnInfoBackgroundHighlight);
+    .box-shadows(inset 0 2px 0 0 darken(@btnInfoBackgroundHighlight, 25%), 0 2px 0 0 @btnInfoBackgroundHighlight);
   }
   .btn-inverse.dropdown-toggle {
     background-color: @btnInverseBackgroundHighlight;
-    .box-shadows(inset 0 2px 0 0 darken(@btnInverseBackgroundHighlight, 35%), 0 2px 0 0 @btnInverseBackgroundHighlight);
+    .box-shadows(inset 0 2px 0 0 darken(@btnInverseBackgroundHighlight, 25%), 0 2px 0 0 @btnInverseBackgroundHighlight);
   }
 }
 
@@ -234,16 +269,37 @@
   float: none;
   max-width: 100%;
   .border-radius(0);
+  &.active,
+  &:active {
+    .box-shadow(inset 0 1px 0 1px darken(@btnBackgroundHighlight, 25%));
+    background-color: @btnBackgroundHighlight;
+  }
 }
 .btn-group-vertical > .btn + .btn {
   margin-left: 0;
   margin-top: -1px;
+  &:hover,
+  &:focus {
+    .box-shadow(none);
+  }
 }
 .btn-group-vertical > .btn:first-child {
   .border-radius(@baseBorderRadius @baseBorderRadius 0 0);
+  &:hover,
+  &:focus {
+    .box-shadow(none);
+  }
 }
 .btn-group-vertical > .btn:last-child {
   .border-radius(0 0 @baseBorderRadius @baseBorderRadius);
+  &:hover,
+  &:focus {
+    .box-shadow(0 2px 0 0 darken(@btnBackgroundHighlight, 25%));
+  }
+  &.active,
+  &:active {
+    .box-shadows(inset 0 1px 0 1px darken(@btnBackgroundHighlight, 25%), 0 2px 0 0 @btnBackgroundHighlight);
+  }
 }
 .btn-group-vertical > .btn-large:first-child {
   .border-radius(@borderRadiusLarge @borderRadiusLarge 0 0);
