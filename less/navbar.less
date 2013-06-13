@@ -22,10 +22,10 @@
   min-height: @navbarHeight;
   padding-left:  20px;
   padding-right: 20px;
-  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+  background-color: @navbarBackground;
+  //#gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
   border: 1px solid @navbarBorder;
   .border-radius(@baseBorderRadius);
-  .box-shadow(0 1px 4px rgba(0,0,0,.065));
 
   // Prevent floats from breaking the navbar
   .clearfix();
@@ -55,7 +55,6 @@
   font-size: 20px;
   font-weight: 200;
   color: @navbarBrandColor;
-  text-shadow: 0 1px 0 @navbarBackgroundHighlight;
   &:hover,
   &:focus {
     text-decoration: none;
@@ -203,19 +202,10 @@
 .navbar-fixed-top {
   top: 0;
 }
-.navbar-fixed-top,
-.navbar-static-top {
-  .navbar-inner {
-    .box-shadow(~"0 1px 10px rgba(0,0,0,.1)");
-  }
-}
 
 // Fixed to bottom
 .navbar-fixed-bottom {
   bottom: 0;
-  .navbar-inner {
-    .box-shadow(~"0 -1px 10px rgba(0,0,0,.1)");
-  }
 }
 
 
@@ -245,7 +235,6 @@
   padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
   color: @navbarLinkColor;
   text-decoration: none;
-  text-shadow: 0 1px 0 @navbarBackgroundHighlight;
 }
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
@@ -266,7 +255,7 @@
   color: @navbarLinkColorActive;
   text-decoration: none;
   background-color: @navbarLinkBackgroundActive;
-  .box-shadow(inset 0 3px 8px rgba(0,0,0,.125));
+  .box-shadow(inset 0 1px 0 0 rgba(0,0,0,.125));
 }
 
 // Navbar button for toggling navbar items in responsive layouts
@@ -392,7 +381,8 @@
 .navbar-inverse {
 
   .navbar-inner {
-    #gradient > .vertical(@navbarInverseBackgroundHighlight, @navbarInverseBackground);
+    //#gradient > .vertical(@navbarInverseBackgroundHighlight, @navbarInverseBackground);
+    background-color: @navbarInverseBackground;
     border-color: @navbarInverseBorder;
   }
 
@@ -471,7 +461,7 @@
       color: @white;
       background-color: @navbarInverseSearchBackground;
       border-color: @navbarInverseSearchBorder;
-      .box-shadow(~"inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15)");
+      .box-shadow(inset 0 1px 2px rgba(0,0,0,.1));
       .transition(none);
       .placeholder(@navbarInverseSearchPlaceholderColor);
 
@@ -480,7 +470,6 @@
       &.focused {
         padding: 5px 15px;
         color: @grayDark;
-        text-shadow: 0 1px 0 @white;
         background-color: @navbarInverseSearchBackgroundFocus;
         border: 0;
         .box-shadow(0 0 3px rgba(0,0,0,.15));
