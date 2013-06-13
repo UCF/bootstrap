@@ -81,9 +81,8 @@
   color: @white;
   text-align: center;
   background: @grayDarker;
-  border: 3px solid @white;
   .border-radius(23px);
-  .opacity(50);
+  .opacity(60);
 
   // we can't have this transition here
   // because webkit cancels the carousel
@@ -106,6 +105,9 @@
     .opacity(90);
   }
 }
+.carousel-control > i {
+  margin-top: 12px;
+}
 
 // Carousel indicator pips
 // -----------------------------
@@ -127,6 +129,9 @@
     background-color: #ccc;
     background-color: rgba(255,255,255,.25);
     border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   .active {
     background-color: #fff;
