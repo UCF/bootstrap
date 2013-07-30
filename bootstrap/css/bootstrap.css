@@ -4503,7 +4503,7 @@ button.close {
   margin-bottom: 0;
   *margin-left: .3em;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.25px;
   color: #ffffff;
